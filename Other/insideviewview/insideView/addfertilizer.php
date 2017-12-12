@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Fertilizer</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/styles.css">
+
+<body>
+
+	
+
+
+	<div class="content">
+		
+
+		<div class="form">
+
+				<b><h4>
+				<form method="POST" action="../model/addnewfertilizer.php">
+			
+				<table border="0"class="table table-stripped table-hover">
+				
+					
+				
+				 
+				<tr><td height="50px" colspan="3"></td></tr>
+				<tr>
+					<td>Fertilizer Type</td>
+					<td width="100px"></td>
+					<td>
+					<select name="fertilizer_type">
+						<option value="Urea" >Urea</option>
+						<option value="micro">Micro Nutrients</option>
+						<option value="amos">Ammonium Sulfate</option>
+						<option value="amor">Ammonium Nitrate</option>
+						<option value="sul">Sulphur Dust</option>
+						
+
+						
+						
+					</select>
+					</td>
+				</tr>
+				<tr><td height="50px" colspan="3"></td></tr>	
+				<tr >
+				 	<td >Quantity  (in kg)</td>
+					<td width="100px"></td>
+					<td ><input type="text" name="fertilizer_quantity" size="10" maxlength="10"></td>
+				</tr>
+				<tr><td height="50px" colspan="3"></td></tr>
+				<tr>
+									
+ 					<td>Date</td>
+					<td width="100px"></td>
+					<td ><input type="text" class="inputvalues" name="fertilizer_date" value=<?php echo date("Y-m-d")?> readonly></td>
+				</tr>
+				
+				
+				<tr><td height="50px" colspan="3"></td></tr>
+				<tr> 
+					
+					
+					<td ><center></center></td>
+					<td width="100px"></td>
+					<td><center><input type="Submit" name="bfertilizer" value="Submit">   </center></td>
+				</tr>
+				</table>
+			
+				</form>
+				</h4>
+				</b>
+	</div>
+	
+
+	
+</body>
+</html>
